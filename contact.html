@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/logo - favicon.jpg">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description"
+          content="" />
+        <title>Kaima Studio Empire || About</title>
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <!--<link rel="stylesheet" href="CSS/contact.css"/>-->
+    
+        <!--contact(css file)-->
+        <style>
+            header{
+    padding: 3rem 0 0 0;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.office-photo {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 0 2rem 0;
+}
+
+address, 
+main a, 
+time {
+    font-family: var(--paragraphFont);
+    font-weight: 400;
+    color: var(--paragraphColor);
+    line-height: 1.7;
+    font-size: 14.6px;
+    margin-bottom: 1.3rem;
+}
+
+address {
+    font-style: normal;
+}
+
+.contact-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.inner-main {
+    padding: 0 1.5rem;
+}
+
+.flex-info {
+    display: flex;
+}
+
+.social-container {
+    justify-content: center;
+}
+
+.social-media-border {
+    border: 1px solid var(--brownFont);
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.social-wrap {
+    align-items: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 0.9rem;
+    font-family: var(--paragraphFont);
+    margin: 0 0 0 1rem;
+    color: #000;
+    font-weight: 600;
+    text-align: initial;
+}
+
+.hr-underline {
+    width: auto;
+    height: 1px;
+    background-color: grey;
+}
+
+.container {
+    margin: 2rem 0 7rem;
+}
+
+@media screen and (min-width: 760px) {
+    main>div {
+        width: 65%;
+        margin: auto;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .office-photo{
+        height: 550px;
+        width: 500px;
+        margin: 0 4rem 0 0;
+        display: block;
+    }
+
+    main>div {
+        width: 40%;
+        margin: unset;
+    }
+
+    .social-container>div {
+        display: flex;
+    }
+
+    .social-container > div > a:nth-child(1){
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    header,
+    main {
+        max-width: 1320px;
+        margin: auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+.courtesy {
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    cursor: pointer;
+}
+.courtesy:hover {
+    color: darksalmon;
+}
+
+.logo {
+    color: #f96d02;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+.flex-center {
+    background-color: #F96D02;
+    color: gray;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
+/*********STYLES FOR MENU BAR************/
+.nav-top {
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.links {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    transition: 0.5s transform ease;
+    top: 0;
+    right: 0;
+    transform: translateX(-100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.show-links {
+    transform: translateX(0);
+    background-color: #f96d02d7;
+}
+  
+li {
+    padding-bottom: 1rem;
+}
+
+li > a {
+    color: var(--brownFont);
+   font-weight: 400;
+    font-size: 2.5rem;
+    font-family: var(--mainFont);
+    text-align: center;
+    display: block;
+}
+  
+li > a:hover {
+    border-bottom: 3px solid var(--brownFont);
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+} 
+#close-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: #F96D02;
+}
+
+#hamburger{
+    display: flex;
+    cursor: pointer;
+    float: right;
+    border-style: none;
+    border-radius: 20px;
+    background-color: #F96D02;
+}
+.logo {
+    color: #F96D02;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+    color: #F96D02;
+}
+.foot-note {
+    padding-top: 10px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="flex nav-top">
+            <a href="index.html" class="logo">Kaima Studio Empire</a>
+            <nav role="navigation">
+                <button id="hamburger" aria-label="Toggle Menu" 
+                    aria-expanded="false" aria-controls="mainNavLinks">
+                    <img src="icons/menu.svg"  
+                        alt="" width="50" 
+                        role="presentation" />
+                </button>
+                <div id="mainNavLinks" class="links" 
+                    aria-labelledby="mainNavHeading"  aria-live="polite">
+                    <button id="close-icon">
+                        <img src="icons/close-icon.svg" alt=""
+                            width="25" role="presentation"/>
+                    </button>
+                    <h2 id="mainNavHeading" hidden>Main menu</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a></li>
+                        <li>
+                            <a href="about.html">About</a></li>
+                        <!--<li>
+                            <a href="studioblog.html">Kaima Studio Gallery</a></li>-->
+                        <li>
+                            <a href="#">Contact</a></li>
+                        <!--<li>
+                            <a href="./pages/blog.html"><span>05</span>OUR BLOG</a></li>-->     
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <header role="banner">
+            <h1>Contact Us</h1>
+        </header>
+        <main role="main">
+            <picture> 
+                <source media="(min-width: 1200px)" 
+                        srcset="icons/logo.jpg">
+                <img src="icons/logo.jpg"
+                    alt="Picture of Kaima's logo"
+                    class="office-photo">
+            </picture>
+            <div>
+                <div class="inner-main">
+                    <p>Have a question? Our team is always ready to help. Feel free to reach us anytime,
+                        we'll be glad to have you in our atelier.</p>
+                    <div class="flex-info">
+                        <img src="icons/location.svg" class="contact-icon" alt="location"/>
+                        <address>Beside Federal Polytechnic, Orumba-North Local Government, 
+                         OKO, Anambra State</address>
+                    </div>
+            
+                    <div class="flex-info">
+                        <img src="icons/clock.svg" class="contact-icon" alt="office-time"/>
+                        <time>Monday - Saturday: 9am-7pm </time>
+                    </div>
+                    
+                    <div class="flex-info">
+                        <img src="icons/phone.svg" class="contact-icon" alt="phone-number"/>
+                        <a href="tel:+234 814 602 7602">+234 814 602 7602</a>
+                    </div>
+                    
+                    <div class="flex-info">
+                        <img src="icons/email.svg" class="contact-icon" alt="email"/>
+                        <a href="mailto:kaimachioma2@gmail.com">kaimachioma2@gmail.com</a>
+                    </div>
+                
+                    <div class="container"> 
+                        <div class="hr-underline"></div>
+                        <div class="flex social-container">
+                            <div>
+                                <a href="https://www.facebook.com/kaima.chioma.5?mibextid=9R9pXO/" target="_blank">
+                                    <div class="flex social-wrap">
+                                        <div class="social-media-border">
+                                            <img src="icons/facebook.svg" alt="facebook" class="social-media"/>
+                                        </div>
+                                        <h2 style="color: white;">Find Us on facebook</h2>
+                                    </div>
+                                </a>
+                                <a href="https://instagram.com/kaimastudioempire?igshid=YWYwM2l1ZDdmOQ==" target="_blank">
+                                    <div class="flex social-wrap">
+                                        <div class="social-media-border">
+                                            <img src="icons/instagram.svg" alt="instagram" class="social-media"/>   
+                                        </div>
+                                        <h2 style="color: white;">Follow Us on instagram</h2>
+                                    </div>
+                                </a> 
+                                
+                            </div>
+                        </div>  
+                        <div class="hr-underline"></div>   
+                    </div>
+                </div>  
+            </div>
+         </main> 
+      <footer role="contentinfo" style="text-align: center;" class="flex-center">
+        <p class="foot-note">
+            &copy;<script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+            </script>
+            Kaima Studio Empire. || Developed by <a href="http://msftdaniel1.github.io/My-Portfolio-website/index.html">MSFT Daniel</a>
+            .
+        </p>
+      </footer>
+    <script src="Js/aboutindex.js"></script>
+    </body>
+</html>

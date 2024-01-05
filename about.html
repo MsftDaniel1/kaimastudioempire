@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/logo - favicon.jpg">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description"
+          content="" />
+        <title>Kaima Studio Empire || About</title>
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <!--<link rel="stylesheet" href="CSS/about.css"/>-->
+
+        <!--about-->
+        <style>
+            
+.about {
+    width: 85%;  
+    margin: auto;
+}
+header{
+    padding: 3rem 0 0 0;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main {
+    margin-bottom: 10rem;
+ }
+
+.article-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);  
+}
+
+#about-photo{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.btn-booking {
+    font-size: .9rem;
+    padding: 6px 25px;
+    color: black;
+    background-color: #F96D02;
+    border-style: none;
+    margin-top: 25px;
+    
+    transition: all 1s;
+
+}
+.btn-booking:hover {
+    transform: scale(0.9);
+}
+.booking {
+    position: absolute;
+    right: 0;
+    background-color: var(--brownFont);
+    color: #fff;
+    width: 13rem;
+}
+
+@media screen and (min-width: 1000px) {
+    main, #about-photo {
+        width: 65%;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+        margin-bottom: 4rem;
+    }
+
+    main {
+        margin: auto auto 12rem auto;
+    }
+
+    #about-photo {
+        width: 100%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    header,
+    main {
+        max-width: 1320px;
+        margin: auto;
+    }
+}
+.flex-center {
+   background-color: #F96D02;
+   color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer {
+    margin-top: 6rem;
+    background-color: var(--brownFont);
+    height: 3rem;
+    font-family: var(--paragraphFont); 
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: unset;
+    font-size: 14px;
+}
+/*********STYLES FOR MENU BAR************/
+.nav-top {
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.links {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    transition: 0.5s transform ease;
+    top: 0;
+    right: 0;
+    transform: translateX(-100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.show-links {
+    transform: translateX(0);
+    background-color: #f96d02d7;
+}
+  
+li {
+    padding-bottom: 1rem;
+}
+
+li > a {
+    color: var(--brownFont);
+   font-weight: 400;
+    font-size: 2.5rem;
+    font-family: var(--mainFont);
+    text-align: center;
+    display: block;
+}
+  
+li > a:hover {
+    border-bottom: 3px solid var(--brownFont);
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+} 
+#close-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: #F96D02;
+}
+
+#hamburger{
+    display: flex;
+    cursor: pointer;
+    float: right;
+    border-style: none;
+    border-radius: 20px;
+    background-color: #F96D02;
+}
+.logo {
+    color: #F96D02;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+    color: #F96D02;
+}
+
+/*
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
+        </style>
+    </head>
+    <body>
+        <div class="flex nav-top">
+            <a href="index.html" class="logo">Kaima Studio Empire</a>
+            <nav role="navigation">
+                <button id="hamburger" aria-label="Toggle Menu" 
+                    aria-expanded="false" aria-controls="mainNavLinks">
+                    <img src="icons/menu.svg"  
+                        alt="" width="50" 
+                        role="presentation" />
+                </button>
+                <div id="mainNavLinks" class="links" 
+                    aria-labelledby="mainNavHeading"  aria-live="polite">
+                    <button id="close-icon">
+                        <img src="icons/close-icon.svg" alt=""
+                            width="25" role="presentation"/>
+                    </button>
+                    <h2 id="mainNavHeading" hidden>Main menu</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a></li>
+                        <li>
+                            <a href="#">About</a></li>
+                        <!--<li>
+                            <a href="">Kaima Studio Gallery</a></li>-->
+                        <li>
+                            <a href="contact.html">Contact</a></li>
+                        <!--<li>
+                            <a href="./pages/blog.html"><span>05</span>OUR BLOG</a></li>-->     
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <header role="banner">
+            <h1>About Us</h1>
+        </header>
+        <main role="main">
+            <article>
+                <div class="about">
+                    <img src="icons/CEO.jpg" 
+                         id="about-photo" 
+                        alt="A man cutting cloth on a table"/>    
+                    <div class="article-content">
+                        <p style="font-style: italic;">Meet <b style="color: #F96D02;"><strong>Kaima Chioma</strong></b>, a multifaceted talent at Kaima Studio Empire, 
+                            specializing in makeup artistry and photography. With an adept skill in enhancing natural beauty and a keen eye for capturing moments, 
+                            she offers a unique fusion of makeup transformations and captivating studio photography. From stunning makeup looks to 
+                            personalized photoshoots and picture frames, Kaima crafts unforgettable experiences that celebrate individual beauty and immortalize cherished moments.</p>
+
+                        <p style="font-style: italic;" >As the creative force behind Kaima Studio Empire, Kaima's journey began as an impassioned
+                             exploration of colors, textures, and styles. With her extensive expertise and training in the art of makeup, she 
+                             curates personalized experiences that reflect each client's unique personality, style, and occasion.
+                        </p>
+                        <p style="font-style: italic;" >
+                             Embracing a philosophy rooted in empowerment and self-expression, Kaima specializes in diverse makeup techniques,
+                             from soft and natural glam to bold and avant-garde creations. Each stroke of her brush celebrates the client's
+                             identity, delivering stunning results that radiate confidence and elegance.</p>
+                        
+                        <p style="font-style: italic;" >Beyond her studio, Kaima shares her artistry through makeup tutorials,
+                             workshops, and collaborations, inspiring others to explore their creativity and embrace their unique beauty.
+                        </p>
+
+                        <p style="font-style: italic;" >Step into Kaima Studio Empire and let Kaima transform your vision into a masterpiece, 
+                            leaving you not just adorned with makeup and captivating studio photography but adorned with confidence and empowerment.</p>
+                        
+                       <button class="btn-booking"><a href="contact.html" class="btn-booking">Book An Appointment</a></button>
+                    </div>
+                </div>  
+            </article> 
+        </main>
+
+        <footer role="contentinfo" class="flex-center">
+            <p class="foot-note">
+                &copy;<script>
+                    var CurrentYear = new Date().getFullYear()
+                    document.write(CurrentYear)
+                </script>
+                Kaima Studio Empire. || Developed by <a href="http://msftdaniel1.github.io/My-Portfolio-website/index.html">MSFT Daniel</a>
+                .
+            </p>
+            <!--<p>Kaima Studio Empire &copy;<span id="date">2024</span> All Rights Reserved</p>-->
+        </footer>
+    <script src="Js/aboutindex.js"></script>
+    </body>
+</html>
